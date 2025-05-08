@@ -50,6 +50,10 @@ img {
     max-width: 100%;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .titulo{
     font-weight: bold;
     margin-bottom: 5rem;
