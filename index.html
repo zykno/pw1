@@ -1,50 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeetProg</title>
-    <meta name="description" content="Pagina de cursos de programacion">
-
-    <!-- Prefetch -->
-    <link rel="prefetch" href="nosotros.html" as="document">
-
-    <!-- Preload -->
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
-
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <header class="header">
-
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">LeetProg</h1>
-                </a>
-
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-                </nav>
-            </div>
-        </div>
-
-        <div class="header__texto">
-            <h2 class="no-margin">Aprende a programar de la mejor manera.</h2>
-        </div>
-    </header>
-
+<div id="header"></div>
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('header').innerHTML = html;
+    });
+</script>
+<script src="https://unpkg.com/scrollreveal@4"></script>
     <div class="contenedor contenido-principal">
         <main class="blog">
-            <h3>Inicio</h3>
+            <h3 class="titulo">Inicio</h3>
 
             <article class="entrada">
                 <div class="entrada__imagen">
@@ -52,7 +17,7 @@
                 </div>
 
                 <div class="entrada__contenido">
-                    <h4 class="no-margin">Base de la Programacion</h4>
+                    <h4 class="titulo-entrada">Base de la Programacion</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
                     <a href="entrada.html" class="boton boton--primario">Mas Informacion</a>
                 </div>
@@ -64,7 +29,7 @@
                 </div>
 
                 <div class="entrada__contenido">
-                    <h4 class="no-margin">HTML, JS y CSS</h4>
+                    <h4 class="titulo-entrada">HTML, JS y CSS</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
                     <a href="entrada2.html" class="boton boton--primario">Mas Informacion</a>
                 </div>
@@ -76,7 +41,7 @@
                 </div>
 
                 <div class="entrada__contenido">
-                    <h4 class="no-margin">Node y React</h4>
+                    <h4 class="titulo-entrada">Node y React</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
                     <a href="entrada3.html" class="boton boton--primario">Mas Informacion</a>
                 </div>
@@ -84,11 +49,11 @@
             
         </main>
         <aside class="sidebar">
-            <h3>Nuestros Cursos</h3>
+            <h3 class="titulo">Nuestros Cursos</h3>
 
             <ul class="cursos no-padding">
                 <li class="widget-curso">
-                    <h4 class="no-margin">Bases de la programacion</h4>
+                    <h4 class="titulo-entrada">Bases de la programacion</h4>
                     <p class="widget-curso__label">Precio: 
                         <span class="widget-curso__info">Gratis</span>
                     </p>
@@ -99,7 +64,7 @@
                 </li>
 
                 <li class="widget-curso">
-                    <h4 class="no-margin">Bases de la programacion web</h4>
+                    <h4 class="titulo-entrada">Bases de la programacion web</h4>
                     <p class="widget-curso__label">Precio: 
                         <span class="widget-curso__info">Gratis</span>
                     </p>
@@ -110,7 +75,7 @@
                 </li>
 
                 <li class="widget-curso">
-                    <h4 class="no-margin">Aprende NodeJS y React</h4>
+                    <h4 class="titulo-entrada">Aprende NodeJS y React</h4>
                     <p class="widget-curso__label">Precio: 
                         <span class="widget-curso__info">50$</span>
                     </p>
@@ -121,7 +86,7 @@
                 </li>
 
                 <li class="widget-curso">
-                    <h4 class="no-margin">Aprende PHP y Laravel</h4>
+                    <h4 class="titulo-entrada">Aprende PHP y Laravel</h4>
                     <p class="widget-curso__label">Precio: 
                         <span class="widget-curso__info">50$</span>
                     </p>
@@ -132,7 +97,7 @@
                 </li>
 
                 <li class="widget-curso">
-                    <h4 class="no-margin">Aprende Bases de Datos</h4>
+                    <h4 class="titulo-entrada">Aprende Bases de Datos</h4>
                     <p class="widget-curso__label">Precio: 
                         <span class="widget-curso__info">30$</span>
                     </p>
@@ -145,23 +110,28 @@
             </ul>
         </aside>
     </div>
+    <script>ScrollReveal().reveal('.scrolltitulo', { 
+        duration:800,
+        origin: 'top',
+        distance:'300px'
+        });</script>
+        <script>ScrollReveal().reveal('.boton--secundario', { 
+            duration:800,
+            origin: 'bottom',
+            distance:'300px'
+            });</script>
 
-    <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">LeetProg</h1>
-                </a>
+        <script>ScrollReveal().reveal('.boton--primario', { 
+            duration:800,
+            origin: 'left',
+            distance:'300px'
+        });</script>
+    <div id="footer"></div>
+    <script>
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('footer').innerHTML = html;
+        });
+    </script>
 
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-                </nav>
-            </div>
-            <p>© Todos los derechos reservados 2025 - Federico Jimenez</p>
-        </div>
-    </footer>
-    <script src="js/modernizr.js"></script>
-</body>
-</html>

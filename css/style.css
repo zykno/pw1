@@ -6,6 +6,7 @@
     --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
+    --grisoscuro: #a9a9a9;
 }
 html {
     box-sizing: border-box;
@@ -25,6 +26,7 @@ body {
     width: min(90%, 130rem);
     margin: 0 auto;
 }
+
 a {
     text-decoration: none;
 }
@@ -47,6 +49,11 @@ h4 {
 img {
     max-width: 100%;
 }
+
+.titulo{
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
 /** Utilidades **/
 .no-margin {
     margin: 0;
@@ -57,15 +64,22 @@ img {
 .centrar-texto {
     text-align: center;
 }
+.centrar-texto.espaciado{
+    margin-bottom: 3rem;
+}
 
 /** Header **/
 
+.sidebar{
+    margin-top: 0rem;
+}
 .header {
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(../img/banner.jpg);
+    margin-bottom: 3rem;
 }
 .header__texto {
    text-align: center;
@@ -113,6 +127,11 @@ img {
     font-size: 1.8rem;
     color: var(--blanco);
 }
+.navegacion__enlace:hover {
+ color: var(--grisoscuro);
+ transition-property: color;
+ transition-duration: .2s;
+}
 
 @media (min-width: 768px) {
     .contenido-principal {
@@ -129,6 +148,10 @@ img {
 
 .texto__entrada p{
     font-family: sans-serif;
+}
+.titulo-entrada{
+    margin: 1rem 0 1rem 0;
+    font-weight: bold;
 }
 
 .imagen__entrada{
@@ -265,6 +288,9 @@ img {
 .campo {
     display: flex;
     margin-bottom: 2rem;
+}
+.campo.centrado{
+    justify-content: center;
 }
 .campo__label {
     flex: 0 0 9rem;
