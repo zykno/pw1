@@ -22,6 +22,9 @@ body {
 }
 
 /** Globales **/
+.bold{
+    font-weight: bold;
+}
 .contenedor {
     width: min(90%, 130rem);
     margin: 0 auto;
@@ -48,10 +51,6 @@ h4 {
 }
 img {
     max-width: 100%;
-}
-
-.bold{
-    font-weight: bold;
 }
 
 .titulo{
@@ -308,3 +307,13 @@ img {
 .campo__field--textarea {
     height: 20rem;
 }
+.map{
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
