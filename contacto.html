@@ -9,41 +9,54 @@
     </script>
 
     <main class="contenedor espaciado">
-        <h3 class="centrar-texto espaciado">Contacto</h3>
 
-        <div class="contacto-bg"></div>
-
-        <form class="formulario">
-            <div class="campo">
-                <label class="campo__label" for="nombre">Nombre</label>
-                <input 
-                    class="campo__field"
-                    type="text" 
-                    placeholder="Tu Nombre" 
-                    id="nombre"
-                >
-            </div>
-            <div class="campo">
-                <label class="campo__label" for="email">E-mail</label>
-                <input 
-                    class="campo__field"
-                    type="email" 
-                    placeholder="Tu E-mail" 
-                    id="email"
-                >
-            </div>
-            <div class="campo">
-                <label class="campo__label" for="mensaje">Mensaje</label>
-                <textarea 
-                    class="campo__field campo__field--textarea"
-                    id="mensaje"
-                ></textarea>
+              <div class="box-formulario">        
+        
+        <div class="formulario">
+            
+            <div class="title-form">
+              <h1><i class="icon icon-comments-o"></i> Envianos tus Datos</h1>
             </div>
 
-            <div class="campo centrado">
-                <input type="submit" value="Enviar" class="boton boton--primario">
-            </div>
-        </form>
+            <form
+                action="https://formspree.io/f/manjnzyv"
+                method="POST"
+            >
+                     
+
+                <span>
+                    <input type="text" class="input-slide" id="nome" name="Apellido y Nombre" placeholder="Apellido y Nombre" autocomplete="off" required=""/>
+                    <label for="nome"> <i class="icon icon-user-outline"></i> </label>
+                </span>
+
+                <span>
+                    <input type="text" class="input-slide" id="email" name="email" placeholder="E-mail" autocomplete="off" required=""/>
+                    <label for="email"> <i class="icon icon-mail-3"></i> </label>
+                </span>
+
+                <span>
+                    <input type="text" class="input-slide" id="assunto" name="asunto" placeholder="Asunto" autocomplete="off" required=""/>
+                    <label for="assunto"> <i class="icon icon-help"></i> </label>
+                </span>
+
+                <span>
+                    <textarea type="text" class="textarea-slide" id="mensaje" name="mensagem" rows="3" placeholder="Mensaje" autocomplete="off" required=""></textarea>
+                    <label for="mensagem"> <i class="icon icon-commenting-o"></i> </label>
+                </span>
+
+                <div class="box-btn">
+                     
+                    <button type="submit" class="btn-envia zoom-shadow">
+                        <i class="icon icon-export"> Enviar</i>
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div><!--Box Formulario--> 
 
         
     </main>
