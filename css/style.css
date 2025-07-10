@@ -76,6 +76,15 @@ img {
 .sidebar{
     margin-top: 0rem;
 }
+    .header {
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(../img/banner.jpg);
+    margin-bottom: 3rem;
+}
+@media (min-width:1400px ) { 
 .header {
     height: 60rem;
     background-size: cover;
@@ -84,17 +93,28 @@ img {
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(../img/banner.jpg);
     margin-bottom: 3rem;
 }
-.header__texto {
+}
+@media (min-width: 1400px) { 
+    .header__texto {
    text-align: center;
    color: var(--blanco);
-   margin-top: 5rem;
+   margin-top: 6rem;
    -webkit-text-stroke-width: .3px;
    -webkit-text-stroke-color: black;
 }
+}
+.header__texto {
+   text-align: center;
+   color: var(--blanco);
+   margin-top: 3rem;
+   -webkit-text-stroke-width: .3px;
+   -webkit-text-stroke-color: black;
+}
+
 .header__texto p{
     -webkit-text-stroke-width: .1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
     .header__texto {
         margin-top: 15rem;
     }
@@ -171,6 +191,7 @@ img {
     font-family: var(--fuenteHeading);
     color: var(--blanco);
     text-align: center;
+    margin-top: 1rem;
     padding: 1rem 3rem;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -315,5 +336,31 @@ img {
     align-items: center;
     justify-content: center;
 }
-
+.warnings{
+    width: 20rem;
+    text-align: center;
+    margin: auto;
+    color: #ad2525;
+    padding-top: 5rem;
+    font-family: 'open_sansbold';
+    font-size: 2rem;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.x{
+    width: 8rem;
+    height: auto;
+    padding-right: 2rem;
+}
+.whatsapp{
+    width: 7rem;
+    height: auto;
+}
+.ig{
+    width: 8.5rem;
+    height: auto;
+}
 
